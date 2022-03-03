@@ -574,6 +574,35 @@ textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 1.4em;
 }
+
+#cvSection .cv__box__divider__flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#cvSection .cv__box__divider__resume {
+    display: block;
+    padding: 10px;
+}
+
+#cvSection .cv__box__picture__image {
+    width: 100%;
+    max-width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+    #cvSection .cv__box__divider__flex {
+        justify-content: center;
+    }
+
+    #cvSection .cv__box__picture__image {
+        width: 100%;
+        max-width: 100px;
+    }
+}
+
+
 /* Curriculum section end */
 
 /* Footer styles */
