@@ -187,7 +187,6 @@ html {
     max-width: 400px;
     filter: invert(1);
     border-radius: 5px;
-    margin: 10px;
 }
 
 /* On cell phone flex direction */
