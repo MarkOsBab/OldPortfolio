@@ -440,11 +440,17 @@ html {
     border-radius: 20px;
 }
 
+.contact__form__title__box {
+    display: flex;
+}
+
 #contactSection .contact__title {
     font-family: 'Secular One', sans-serif;
     color: var(--light-white);
     margin: 0px 10px;
     font-size: 2.4em;
+    border-bottom: .2rem solid var(--light-white);
+    border-radius: 1rem;
 }
 
 #contactSection .contact__subTitle {
