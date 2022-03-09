@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 :root {
@@ -19,11 +20,20 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+
 /* Header styles */
 #header {
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding-bottom: 60px;
 }
 
@@ -163,10 +173,6 @@ html {
 /* Home section styles */
 
 #about-me {
-    margin: 20px 50px;
-    background-color: var(--light-white);
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px var(--dark-transparent);
     font-size: 1.6em;
 }
 
@@ -174,7 +180,10 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 0px 100px;
+    padding: 1rem;
+    background-color: var(--light-white);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--dark-transparent);
 }
 
 #about-me .about__box__inline {
@@ -230,7 +239,8 @@ html {
 /* Langs section start*/
 
 #langSection {
-    background-color: var(--dark-1);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 50px;
 }
 
@@ -246,16 +256,16 @@ html {
 #langSection .lang__item {
     padding: 10px 20px;
     margin: 10px;
-    border-bottom: 1px solid var(--primary);
-    border-right: 1px solid var(--primary);
+    border-bottom: 1px solid var(--dark);
+    border-right: 1px solid var(--dark);
     border-bottom-right-radius: 5px;
-    box-shadow: 2px 2px 2px 1px var(--primary);
+    box-shadow: 2px 2px 2px 1px var(--dark);
 }
 
 #langSection .lang__title {
     font-family: 'Raleway', sans-serif;
     margin: 10px 20px;
-    color: var(--white);
+    color: var(--dark-1);
     font-size: 2.5em;
 }
 
@@ -271,7 +281,7 @@ html {
 #langSection .lang__item__text {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    color: var(--white);
+    color: var(--dark-1);
     text-align: center;
     font-size: 1.7em;
 }
@@ -616,6 +626,7 @@ textarea {
 .footer {
     background-color: var(--light-white);
     padding: 30px;
+    margin-top: 1rem;
 }
 
 .footer .footer__title {
@@ -637,14 +648,27 @@ textarea {
     padding: 3px 10px;
 }
 
+@keyframes footer__social__icon--animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .footer .footer__social__icon {
-    width: 30px;
-    transition: .5s;
+    transition: all step-end;
 }
 
 .footer .footer__social__icon:hover {
     filter: opacity(.5);
+    animation: footer__social__icon--animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+
+
 
 /* End footer styles */
 
