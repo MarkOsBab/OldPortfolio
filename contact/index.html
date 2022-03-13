@@ -15,6 +15,7 @@
     <title>Portfolio - Marcos García</title>
     <link rel="icon" href="../files/images/logo.png">
     <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../files/css/styles.css">
     <!-- End CSS Files -->
 
@@ -69,32 +70,36 @@
         <article>
             <div class="contact__form__box">
                 <form action="#">
-                    <div class="contact__form__item">
-                        <div class="contact__form__title__box">
-                            <h2 class="contact__title">Contact me</h2>
-                        </div>
-                        <p class="contact__subTitle">If you want to contact me either to do a job, for any questions or inconveniences do not hesitate to do so, your email will be answered as soon as possible.</p>
-                        <div class="contact__form__item__grid">
-                            <div class="contact__form__divider">
-                                <input type="text" name="Name_Input" id="Name_Input" placeholder="Put your name" class="contact__form__control">
-                            </div>
-                            <div class="contact__form__divider">
-                                <input type="text" name="Correo_Input" id="Correo_Input" placeholder="Put your email" class="contact__form__control">
-                            </div>
-                            <div class="contact__form__divider">
-                                <select name="Select_Reason" id="Select_Reason" class="contact__form__control">
-                                    <option value="" class="contact__form__control">Select a contact reason</option>
-                                    <option value="Work" class="contact__form__control">Work motive</option>
-                                    <option value="Question" class="contact__form__control">Question</option>
-                                </select>
-                            </div>
-                            <div class="contact__form__divider">
-                                <div class="contact__form__divider--textarea">
-                                    <textarea name="Message_Text" id="Message_Text" rows="6" placeholder="Message.." class="contact__form__control"></textarea>
+                    <div class="">
+                        <div class="row vh-100 justify-content-center align-items-center">
+                            <div class="col-sm-8 bg-primary p-4 rounded">
+                                <div class="contact__form__title__box">
+                                    <h2 class="contact__title">Contact me</h2>
                                 </div>
-                            </div>
-                            <div class="contact__form__button__box">
-                                <button type="submit" class="contact__form__button">CONTACT</button>
+                                <p class="contact__subTitle">If you want to contact me either to do a job, for any questions or inconveniences do not hesitate to do so, your email will be answered as soon as possible.</p>
+                                <div class="contact__form__item__grid">
+                                    <div class="contact__form__divider">
+                                        <input type="text" name="Name_Input" id="Name_Input" placeholder="Put your name" class="contact__form__control">
+                                    </div>
+                                    <div class="contact__form__divider">
+                                        <input type="text" name="Correo_Input" id="Correo_Input" placeholder="Put your email" class="contact__form__control">
+                                    </div>
+                                    <div class="contact__form__divider">
+                                        <select name="Select_Reason" id="Select_Reason" class="contact__form__control">
+                                            <option value="" class="contact__form__control">Select a contact reason</option>
+                                            <option value="Work" class="contact__form__control">Work motive</option>
+                                            <option value="Question" class="contact__form__control">Question</option>
+                                        </select>
+                                    </div>
+                                    <div class="contact__form__divider">
+                                        <div class="contact__form__divider--textarea">
+                                            <textarea name="Message_Text" id="Message_Text" rows="6" placeholder="Message.." class="contact__form__control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="contact__form__button__box">
+                                        <button type="submit" class="contact__form__button">CONTACT</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,5 +137,7 @@
     </footer>
     <!-- Footer end -->
 
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
