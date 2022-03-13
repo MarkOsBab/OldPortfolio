@@ -223,6 +223,7 @@ body {
 
 #about-me .about__title, .about__content {
     font-family: 'Raleway', sans-serif;
+    font-weight: bold !important;
 }
 
 #about-me .about__title {
@@ -308,13 +309,6 @@ body {
 /* End lang section */
 
 /* Modal styles start */
-
-.modal {
-    background-image: url(../images/modal_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 .modal__box {
     background-color: var(--dark-1) !important;
@@ -669,10 +663,11 @@ textarea {
 }
 
 .footer .footer__title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     text-align: center;
-    color: var(--dark);
+    color: var(--dark) !important;
     font-size: 20px;
+    font-weight: bold !important;
 }
 
 .footer .footer__social {
