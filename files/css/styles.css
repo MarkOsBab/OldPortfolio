@@ -239,8 +239,7 @@ body {
 /* Langs section start*/
 
 #langSection {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: var(--dark-1);
     padding: 50px;
 }
 
@@ -256,16 +255,16 @@ body {
 #langSection .lang__item {
     padding: 10px 20px;
     margin: 10px;
-    border-bottom: 1px solid var(--dark);
-    border-right: 1px solid var(--dark);
+    border-bottom: 1px solid var(--primary);
+    border-right: 1px solid var(--primary);
     border-bottom-right-radius: 5px;
     box-shadow: 2px 2px 2px 1px var(--dark);
 }
 
 #langSection .lang__title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     margin: 10px 20px;
-    color: var(--dark-1);
+    color: var(--light-white);
     font-size: 2.5em;
 }
 
@@ -281,7 +280,7 @@ body {
 #langSection .lang__item__text {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    color: var(--dark-1);
+    color: var(--light-white);
     text-align: center;
     font-size: 1.7em;
 }
@@ -307,6 +306,46 @@ body {
 }
 
 /* End lang section */
+
+/* Modal styles start */
+
+.modal {
+    background-image: url(../images/modal_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.modal__box {
+    background-color: var(--dark-1) !important;
+    color: var(--light-white);
+    padding: 2rem 0;
+}
+
+.modal__box__title {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: bolder;
+    font-size: 2em !important;
+}
+
+.modal__box__desc {
+    font-size: 1.4em !important;
+}
+
+.modal__box__button--close {
+    padding: .7rem;
+    background-color: #dc143c;
+    color: var(--light-white);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.modal__box__button--close:hover {
+    background-color: #a30d2b;
+}
+/* Modal styles end */
 
 /* Works section start */
 

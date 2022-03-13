@@ -15,6 +15,7 @@
     <title>Portfolio - Marcos García</title>
     <link rel="icon" href="../files/images/logo.png">
     <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../files/css/styles.css">
     <!-- End CSS Files -->
 
@@ -69,25 +70,25 @@
         <article>
             <div class="lang__box">
                 <div class="lang__item">
-                    <a class="lang__item__link" href="#OpenModalHTML">
+                    <a href="#htmlModal" class="lang__item__link" data-bs-toggle="modal" data-bs-target="#htmlModal">
                         <img src="../files/images/HTML5_Icon.png" alt="Logo HTML5" class="lang__item__icon">
                         <p class="lang__item__text">HTML</p>
                     </a>
                 </div>
                 <div class="lang__item">
-                    <a class="lang__item__link" href="#OpenModalCSS3">
+                    <a href="#cssModal" class="lang__item__link" data-bs-toggle="modal" data-bs-target="#cssModal">
                         <img src="../files/images/CSS3_Icon.png" alt="Logo HTML5" class="lang__item__icon">
                         <p class="lang__item__text">CSS3</p>
                     </a>
                 </div>
                 <div class="lang__item">
-                    <a class="lang__item__link" href="#OpenModalJS">
+                    <a href="#jsModal" class="lang__item__link" data-bs-toggle="modal" data-bs-target="#jsModal"">
                         <img src="../files/images/JS_Icon.png" alt="Logo HTML5" class="lang__item__icon">
                         <p class="lang__item__text">JS</p>
                     </a>
                 </div>
                 <div class="lang__item">
-                    <a class="lang__item__link" href="#OpenModalPHP">
+                    <a href="#phpModal" class="lang__item__link" data-bs-toggle="modal" data-bs-target="#phpModal">
                         <img src="../files/images/PHP_Icon.png" alt="Logo HTML5" class="lang__item__icon">
                         <p class="lang__item__text">PHP</p>
                     </a>
@@ -96,7 +97,92 @@
         </article>
     </section>
     <!-- End lang section -->
-    
+
+    <!-- Modals start -->
+    <!-- Modal HTML5 -->
+    <div class="modal fade" id="htmlModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal__box">
+                <div class="modal-header">
+                <h5 class="modal-title modal__box__title" id="exampleModalLabel">HTML5</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal__box__desc">
+                        HTML 5 is a revision of the Hypertext Markup Language (HTML), the standard programming language for describing the contents and appearance of Web pages. HTML5 was developed to solve compatibility problems that affect the current standard, HTML4.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="modal__box__button--close" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal HTML5 -->
+
+    <!-- Modal CSS3 -->
+    <div class="modal fade" id="cssModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal__box">
+                <div class="modal-header">
+                <h5 class="modal-title modal__box__title" id="exampleModalLabel">CSS3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal__box__desc">
+                        Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements. A key change is the division of standard into separate modules, which makes it easier to learn and understand.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="modal__box__button--close" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal CSS3 -->
+
+    <!-- Modal JS -->
+    <div class="modal fade" id="jsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal__box">
+                <div class="modal-header">
+                <h5 class="modal-title modal__box__title" id="exampleModalLabel">JavaScript</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal__box__desc">
+                        JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="modal__box__button--close" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal JS -->
+
+    <!-- Modal PHP -->
+    <div class="modal fade" id="phpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal__box">
+                <div class="modal-header">
+                <h5 class="modal-title modal__box__title" id="exampleModalLabel">PHP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal__box__desc">
+                        PHP is a recursive acronym for "PHP: Hypertext Preprocessor". PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="modal__box__button--close" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal PHP -->
+
     <!-- Footer start -->
     <footer class="footer">
         <h3 class="footer__title">Portfolio - Marcos García © 2022</h3>
@@ -124,5 +210,8 @@
         </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
