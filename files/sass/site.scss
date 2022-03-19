@@ -1,0 +1,17 @@
+/* Misc */
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+@import './misc/animations';
+
+/* Partials */
+@import './partials/header';
+@import './partials/navbar';
+@import './partials/footer';
+
+/* Views */
+@import './views/about';
+@import './views/knowledge';
+@import './views/projects';
+@import './views/contact';
+@import './views/resume';

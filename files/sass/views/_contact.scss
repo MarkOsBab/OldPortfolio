@@ -1,0 +1,113 @@
+.contactSection {
+    background-image: url(../images/contact_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 0px;
+    padding: 40px 10px;
+
+    .contact__form__box {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $dark;
+    }
+    
+    .contact__form__item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+        width: 768px;
+        border-radius: 20px;
+    }
+
+    .contact__form__title__box {
+        display: flex;
+    }
+
+    .contact__title {
+        font-family: 'Secular One', sans-serif;
+        color: $light-white;
+        margin: 0px 10px;
+        font-size: 2.4em;
+        border-bottom: .2rem solid $light-white;
+        border-radius: 1rem;
+    }
+
+    .contact__subTitle {
+        font-family: 'Raleway', sans-serif;
+        color: $light-white;
+        font-weight: bolder;
+        margin: 10px;   
+        font-size: 1.6em;
+    }
+
+    .contact__form__item__grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    }
+
+    .contact__form__divider {
+        margin: 0px 40px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .contact__form__control {
+        padding: 10px 10px;
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        &:focus {
+            outline: 3px solid $dark-transparent;
+        }
+    }
+
+    .contact__form__button {
+        font-family: 'Raleway', sans-serif;
+        color: $dark-1;
+        font-weight: bolder;
+        font-size: 2em;
+        padding: 10px 30px;
+        background-color: $light-white;
+        border-radius: 5px;
+        border: 0;
+        transition: .5s;
+
+        &:hover {
+            background-color: #D6D6D6;
+            cursor: pointer;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .contactSection {
+            padding: 40px 0px;
+        }
+    
+        .contact__form__box {
+            margin: 0px;
+        }
+    
+        .contact__form__divider {
+            margin: 0px 10px;
+        }
+    
+        .contact__form__item {
+            border-radius: 0;
+            width: 100%;
+        }
+    }
+}

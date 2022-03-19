@@ -1,0 +1,55 @@
+.header {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 60px;
+
+    &__box {
+        display: inline-block;
+        position: relative;
+        margin-top: 60px;
+        padding: 50px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+
+        &--color {
+            background-color: $dark-transparent;
+        }
+
+        .header__title {
+            font-family: 'Lobster', cursive;
+            letter-spacing: 3px;
+            font-size: 4em;
+            &--color {
+                color: $white;
+            }
+            &--subColor {
+                color: $primary;
+            }
+        }
+        
+        .header__subTitle {
+            font-family: 'Raleway', sans-serif;
+            padding-top: 3px;
+            font-size: 2em;
+            &--color {
+                color: $white;
+            }
+        }
+        
+        .header__image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__box {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+        }
+    }
+}

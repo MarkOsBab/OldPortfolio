@@ -1,0 +1,103 @@
+.worksSection {
+    background-color: $light-white;
+    margin: 10px 50px;
+    box-shadow: 3px 3px 3px $dark-transparent;
+    border-radius: 5px;
+
+    .works__box {
+        margin: 20px 20px;
+        &__item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            display: flex;
+            &__text {
+                padding: 2px 0px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bolder;
+                color: #000;
+                border-bottom: 2px solid $primary;
+                font-size: 2em;
+            }
+        }
+        
+        &__image {
+            padding: 0px 30px;
+            max-width: 100%;
+            width: 200px;
+        }
+
+        &__content {
+            font-family: 'Raleway', sans-serif;
+            font-weight: bolder;
+            color: #000;
+            padding: 20px;
+            font-size: 1.6em;
+        }
+
+        &__button__box {
+            display: flex;
+            justify-content: end;
+            margin: 20px;
+            padding: 10px 0;
+
+            .works__box__button {
+                text-decoration: none;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bolder;
+                background-color: $primary;
+                color: $white;
+                padding: 10px;
+                transition: .5s;
+                font-size: 1.6em;
+                &:hover {
+                    background-color: $link-hover;
+                }
+            }
+            .works__button__disable {
+                pointer-events: none;
+                background-color: #515151;
+            }
+        }
+    }
+
+    .works__title {
+        font-family: 'Raleway', sans-serif;
+        margin: 10px 20px;
+        color: $dark-1; 
+        font-size: 2.5em;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .worksSection {
+            margin: 0 0px;
+        }
+    
+        & .works__box__item {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+    
+        & .works__box__image {
+            padding: 0px 30px;
+            min-width: 200px;
+            width: 200px;
+            order: 1;
+        }
+    
+        & .works__box__title {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}

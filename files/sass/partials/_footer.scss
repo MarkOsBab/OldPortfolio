@@ -1,0 +1,32 @@
+.footer {
+    background-color: $light-white;
+    padding: 30px;
+    margin-top: 1rem;
+
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        color: $dark;
+        font-size: 20px;
+    }
+
+    &__social {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        &__item {
+            padding: 3px 10px;
+        }
+        &__icon {
+            transition: all step-end;
+            &:hover {
+                filter: opacity(.5);
+                animation: footer__social__icon--animation;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
