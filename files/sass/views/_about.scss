@@ -15,8 +15,12 @@
         }
 
         .about__image {
+            @mixin sizes($width, $height) {
+                max-width: $width;
+                height: $height;
+            }
             width: 100%;
-            max-width: 400px;
+            @include sizes(400px, 100%);
             filter: invert(1);
             border-radius: 5px;
         }

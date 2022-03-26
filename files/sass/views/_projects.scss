@@ -3,6 +3,10 @@
     margin: 10px 50px;
     box-shadow: 3px 3px 3px $dark-transparent;
     border-radius: 5px;
+    
+    .works__title {
+        @extend .works__box__title__text;
+    }
 
     .works__box {
         margin: 20px 20px;

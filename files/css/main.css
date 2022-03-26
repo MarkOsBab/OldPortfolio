@@ -11,7 +11,8 @@ html {
 body {
   display: flex;
   flex-flow: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-height: 100vh; }
 
 #homepage {
   display: grid;
@@ -156,8 +157,10 @@ body {
     .footer__social__item {
       padding: 3px 10px; }
     .footer__social__icon {
+      color: #2b2b2b;
       transition: all step-end; }
       .footer__social__icon:hover {
+        color: #000;
         filter: opacity(0.5);
         animation: footer__social__icon--animation;
         animation-duration: 2s;
@@ -180,6 +183,7 @@ body {
     .about-me .about__box .about__image {
       width: 100%;
       max-width: 400px;
+      height: 100%;
       filter: invert(1);
       border-radius: 5px; }
     .about-me .about__box .about__title {
@@ -266,7 +270,7 @@ body {
       align-items: center; }
     .worksSection .works__box__title {
       display: flex; }
-      .worksSection .works__box__title__text {
+      .worksSection .works__box__title__text, .worksSection .works__title {
         padding: 2px 0px;
         font-family: 'Raleway', sans-serif;
         font-weight: bolder;
