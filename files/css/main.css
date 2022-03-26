@@ -69,11 +69,11 @@ body {
         color: #fff; }
       .header__box .header__title--subColor {
         color: #7CCBBA; }
-    .header__box .header__subTitle {
+    .header__box .header__subtitle {
       font-family: 'Raleway', sans-serif;
       padding-top: 3px;
       font-size: 2em; }
-      .header__box .header__subTitle--color {
+      .header__box .header__subtitle--color {
         color: #fff; }
     .header__box .header__image {
       position: absolute;
