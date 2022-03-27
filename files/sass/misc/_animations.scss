@@ -6,3 +6,29 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes knowladge__icon {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes seo-anim {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(5px);}
+    50% {transform: translateY(-5px);}
+    75% {transform: translateY(5px);}
+    100% {transform: translateY(0px);}
+}

@@ -2,7 +2,7 @@
     display: block;
     position: relative;
     margin-top: 10px;
-    width: 55%;
+    width: 100%;
     margin-left: auto;
 
     &__list {
@@ -10,11 +10,9 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
         text-align: center;
         padding: 5px;
-        justify-content: space-between;
+        justify-content: center;
         &--color {
             background-color: $dark-transparent;
         }
@@ -52,19 +50,7 @@
             }
         }
     }
-
-    @media screen and (max-width: 768px) {
-        & {
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            margin-top: 10px;
-            width: 100%;
-        }
-    
-        &__list {
-            justify-content: space-evenly;
-            align-items: stretch;
-        }
-    }
+    #myLinks {
+        display: none;
+      }
 }

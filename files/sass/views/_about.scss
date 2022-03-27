@@ -1,5 +1,8 @@
 .about-me {
     font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .about__box {
         display: flex;
@@ -15,22 +18,35 @@
         }
 
         .about__image {
-            @mixin sizes($width, $height) {
-                max-width: $width;
-                height: $height;
-            }
             width: 100%;
-            @include sizes(400px, 100%);
+            max-width: 400px;
             filter: invert(1);
             border-radius: 5px;
+            padding: 1rem;
         }
 
         .about__title {
             text-align: left;
+            transform: translateX(-0.75em);
+            transition: transform 200ms;
+            &::before {
+                content: '#';
+                display: inline-block;
+                width: 0.75em;
+                color: $primary;
+                opacity: 0;
+                transition: opacity 200ms;
+            }
+            &:hover {
+                transform: none;
+            }
+            &:hover::before {
+                opacity: 1;
+            }
         }
 
         .about__content {
-            margin: 7px;
+            padding: 1rem;
             font-weight: bold;
         }
 
@@ -49,13 +65,13 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            margin: 0px 40px;
 
             .about__image {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
                 width: 100%;
                 min-width: 200px;
-                filter: invert(1);
-                border-radius: 5px;
             }
         }
     }

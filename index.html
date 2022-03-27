@@ -18,6 +18,7 @@
     <title>Portfolio - Marcos García</title>
     <link rel="icon" href="files/images/logo.png">
     <!-- CSS Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="files/css/main.css">
     <!-- End CSS Files -->
 
@@ -47,7 +48,7 @@
                         <a class="navbar__item__link navbar__item__link--color navbar__item__link--active" href="#">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__item__link navbar__item__link--color" href="knowledge/index.html">Knowledge</a>
+                        <a class="navbar__item__link navbar__item__link--color" href="#knowladge">Knowledge</a>
                     </li>
                     <li class="navbar__item">
                         <a class="navbar__item__link navbar__item__link--color" href="projects/index.html">Projects</a>
@@ -68,7 +69,7 @@
     <!-- Section about me start-->
     <section class="about-me">
         <article>
-            <div class="about__box">
+            <div class="about__box container">
                 <div class="about__box__inline about__image__box">
                     <img src="files/images/about_me.jpg" alt="About me image" class="about__image">
                 </div>
@@ -80,6 +81,72 @@
         </article>
     </section>
     <!-- End section about me-->
+
+    <!-- Lang section start-->
+    <section class="knowladge">
+        <article id="knowladge">
+            <div class="knowladge__box container">
+                <h2 class="knowladge__box__title">These are my knowladge</h2>
+                <div class="knowladge__box__grid">
+                    <div class="knowladge__box__item" data-aos="fade-up">
+                        <div class="knowladge__box__item__icon">
+                            <i class="fa-brands fa-html5 fa-8x knowladge__icon orange"></i>
+                        </div>
+                        <div class="knowladge__box__item__desc">
+                            <p class="knowladge__box__item__desc__title">HTML5</p>
+                            My performance with HTML5 and its semantics is very good, I have 2 years of experience with the language and during this time I have perfected myself.
+                        </div>
+                    </div>
+                    <div class="knowladge__box__item" data-aos="fade-up">
+                        <div class="knowladge__box__item__desc">
+                            <p class="knowladge__box__item__desc__title">SASS</p>
+                            My performance with SASS is just beginning, applying everything I learn and always looking to improve in order to reach the best level.
+                        </div>
+                        <div class="knowladge__box__item__icon pink">
+                            <i class="fa-brands fa-sass fa-8x knowladge__icon"></i>
+                        </div>
+                    </div>
+                    <div class="knowladge__box__item" data-aos="fade-up">
+                        <div class="knowladge__box__item__icon">
+                            <i class="fa-brands fa-git-square fa-8x knowladge__icon dark"></i>
+                        </div>
+                        <div class="knowladge__box__item__desc">
+                            <p class="knowladge__box__item__desc__title">GIT & GITHUB</p>
+                            My experience with GIT and GITHUB is very good, enough to work in a team with the best.
+                        </div>
+                    </div>
+                    <div class="knowladge__box__item" data-aos="fade-up">
+                        <div class="knowladge__box__item__desc">
+                            <p class="knowladge__box__item__desc__title">CSS3</p>
+                            My experience with CSS3 is currently the best, I am improving every day to reach the best level, but right now I have 95% of the necessary knowledge to apply them in any type of work.
+                        </div>
+                        <div class="knowladge__box__item__icon">
+                            <i class="fa-brands fa-css3 fa-8x knowladge__icon blue"></i>
+                        </div>
+                    </div>
+                    <div class="knowladge__box__item" data-aos="fade-up">
+                        <div class="knowladge__box__item__icon">
+                            <i class="fa-brands fa-php fa-8x knowladge__icon blue_1"></i>
+                        </div>
+                        <div class="knowladge__box__item__desc">
+                            <p class="knowladge__box__item__desc__title">PHP</p>
+                            My knowledge of PDO is basic but enough to do some types of work, I learned PHP in a self-taught way and adapting it to the needs I had at the time.
+                        </div>
+                    </div>
+                    <div class="knowladge__box__item" data-aos="fade-up">
+                        <div class="knowladge__box__item__desc">
+                            <p class="knowladge__box__item__desc__title">SEO</p>
+                            My experience with SEO is good, being able to position the site in a good way, also applying Open Graph to appear in a good way when users share the site.
+                        </div>
+                        <div class="knowladge__box__item__icon">
+                            <i class="fa-solid fa-angles-up fa-8x knowladge__icon seo-anim sky_blue"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- End lang section -->
 
     <!-- Footer start -->
     <footer class="footer">
@@ -108,5 +175,9 @@
         </div> 
     </footer>
     <!-- Footer end -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./files/js/main.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
