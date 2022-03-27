@@ -9,30 +9,4 @@
         color: $dark;
         font-size: 20px;
     }
-
-    &__social {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0;
-        &__item {
-            padding: 3px 10px;
-        }
-        &__icon {
-            $icon_color:(
-                dark_col: #2b2b2b,
-                black_col: #000
-            );
-            color: map-get($icon_color, dark_col);
-            transition: all step-end;
-            &:hover {
-                color: map-get($icon_color, black_col);
-                filter: opacity(.5);
-                animation: footer__social__icon--animation;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-            }
-        }
-    }
 }
