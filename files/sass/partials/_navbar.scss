@@ -1,12 +1,9 @@
 .navbar {
-    display: block;
-    position: relative;
-    margin-top: 10px;
+    margin-top: 1rem;
     width: 100%;
     margin-left: auto;
 
     &__list {
-        position: static;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;

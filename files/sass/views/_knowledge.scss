@@ -43,6 +43,9 @@
             grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
             margin: 3rem 1rem;
             padding: 1rem;
+            &:nth-child(odd) {
+                border-right: .1rem solid $primary;
+            }
             &__icon {
                 justify-self: center;
                 align-self: center;
