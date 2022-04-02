@@ -7,10 +7,9 @@
         padding: 1rem;
         background-color: $light-white;
         border-radius: 5px;
-        box-shadow: 3px 3px 3px $dark-transparent;
         &__title {
             font-family: 'Raleway', sans-serif;
-            font-size: 2.3em;
+            font-size: 2em;
             transform: translateX(-0.75em);
             transition: transform 200ms;
             &::before {
@@ -32,7 +31,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
         }
 
@@ -65,10 +64,16 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+                &--mail {
+                    color: $primary;
+                }
                 &__box {
                     width: 100%;
                     max-width: 20rem;
                     transition: transform .5s, filter .5s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &:hover {
                         transform: scale(1.1);
                     }
@@ -80,6 +85,56 @@
                     font-weight: bolder;
                     text-align: center;
                     color: $dark-1;
+                }
+            }
+        }
+        &__form {
+            padding: 2rem;
+            &__box {
+                width: 50vw;
+            }
+            &__area {
+                display: flex;
+                @media screen and (max-width: 768px) {
+                    & {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+                }
+                &__input {
+                    margin: 1rem;
+                    width: 100%;
+                    padding: 1rem;
+                    border: .2rem solid $primary;
+                    border-radius: .2rem;
+                    resize: none;
+                    &:focus-visible {
+                        outline: .1rem solid $link-color;
+                    }
+                }
+                &__button {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: end;
+                }
+                &__submit {
+                    padding: 2rem;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: bolder;
+                    background-color: $primary;
+                    border: none;
+                    cursor: pointer;
+                    color: $white;
+                    transition: .5s;
+                    &:hover {
+                        background-color: $link-hover;
+                        animation: button__contact;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards; 
+                    }
                 }
             }
         }

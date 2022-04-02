@@ -44,7 +44,7 @@
             margin: 3rem 1rem;
             padding: 1rem;
             &:nth-child(odd) {
-                border-right: .1rem solid $primary;
+                border-right: .5rem solid $primary;
             }
             &__icon {
                 justify-self: center;

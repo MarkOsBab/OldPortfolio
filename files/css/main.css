@@ -98,6 +98,14 @@ a {
   100% {
     transform: translateY(0px); } }
 
+@keyframes button__contact {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0px); } }
+
 /* Partials */
 .header {
   background-image: url("../images/header.jpg");
@@ -285,7 +293,7 @@ a {
       margin: 3rem 1rem;
       padding: 1rem; }
       .knowladge__box__item:nth-child(odd) {
-        border-right: 0.1rem solid #7CCBBA; }
+        border-right: 0.5rem solid #7CCBBA; }
       .knowladge__box__item__icon {
         justify-self: center;
         align-self: center;
@@ -451,11 +459,10 @@ a {
   .contact__box {
     padding: 1rem;
     background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+    border-radius: 5px; }
     .contact__box__title {
       font-family: 'Raleway', sans-serif;
-      font-size: 2.3em;
+      font-size: 2em;
       transform: translateX(-0.75em);
       transition: transform 200ms; }
       .contact__box__title::before {
@@ -473,7 +480,7 @@ a {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center; }
     .contact__box__item {
       display: flex;
@@ -500,10 +507,15 @@ a {
           background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
+        .contact__box__item__icon--mail {
+          color: #7CCBBA; }
         .contact__box__item__icon__box {
           width: 100%;
           max-width: 20rem;
-          transition: transform .5s, filter .5s ease-in-out; }
+          transition: transform .5s, filter .5s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
           .contact__box__item__icon__box:hover {
             transform: scale(1.1); }
         .contact__box__item__icon__text {
@@ -512,6 +524,46 @@ a {
           font-weight: bolder;
           text-align: center;
           color: #2B2B2B; }
+    .contact__box__form {
+      padding: 2rem; }
+      .contact__box__form__box {
+        width: 50vw; }
+      .contact__box__form__area {
+        display: flex; }
+        @media screen and (max-width: 768px) {
+          .contact__box__form__area {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; } }
+        .contact__box__form__area__input {
+          margin: 1rem;
+          width: 100%;
+          padding: 1rem;
+          border: 0.2rem solid #7CCBBA;
+          border-radius: .2rem;
+          resize: none; }
+          .contact__box__form__area__input:focus-visible {
+            outline: 0.1rem solid #60BBA2; }
+        .contact__box__form__area__button {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: end; }
+        .contact__box__form__area__submit {
+          padding: 2rem;
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.8rem;
+          font-weight: bolder;
+          background-color: #7CCBBA;
+          border: none;
+          cursor: pointer;
+          color: #fff;
+          transition: .5s; }
+          .contact__box__form__area__submit:hover {
+            background-color: #519C87;
+            animation: button__contact;
+            animation-duration: 1s;
+            animation-fill-mode: forwards; }
 
 .cvSection {
   background-color: #f2f2f2;
