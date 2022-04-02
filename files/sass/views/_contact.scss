@@ -112,6 +112,10 @@
                     &:focus-visible {
                         outline: .1rem solid $link-color;
                     }
+
+                    &:required {
+                        background-color: $primary;
+                    }
                 }
                 &__button {
                     display: flex;
@@ -140,3 +144,16 @@
         }
     }
 }
+
+.alertify-notifier .ajs-message.ajs-success {
+    color: #fff;
+    background: rgba(91, 189, 114, 0.95);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1.8em;
+  }
+  .alertify-notifier .ajs-message.ajs-error {
+    color: #fff;
+    background: rgba(217, 92, 92, 0.95);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1.8em;
+  }

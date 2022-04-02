@@ -544,6 +544,8 @@ a {
           resize: none; }
           .contact__box__form__area__input:focus-visible {
             outline: 0.1rem solid #60BBA2; }
+          .contact__box__form__area__input:required {
+            background-color: #7CCBBA; }
         .contact__box__form__area__button {
           display: flex;
           flex-wrap: wrap;
@@ -564,6 +566,18 @@ a {
             animation: button__contact;
             animation-duration: 1s;
             animation-fill-mode: forwards; }
+
+.alertify-notifier .ajs-message.ajs-success {
+  color: #fff;
+  background: rgba(91, 189, 114, 0.95);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1.8em; }
+
+.alertify-notifier .ajs-message.ajs-error {
+  color: #fff;
+  background: rgba(217, 92, 92, 0.95);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1.8em; }
 
 .cvSection {
   background-color: #f2f2f2;
