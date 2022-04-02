@@ -275,8 +275,11 @@
                                     <div class="contact__box__form__area">
                                         <textarea required class="contact__box__form__area__input" rows="10" placeholder="Type your message" v-model="message"></textarea>
                                     </div>
-                                    <div class="contact__box__form__area__button">
-                                        <button class="contact__box__form__area__submit" @click="enviar">Submit</button>
+                                    <div class="contact__box__form__area__foo">
+                                        <div class="g-recaptcha" data-sitekey="6Ld7UT0fAAAAAAmyvN-MIooKlM6HhftA5AkBOY0s"></div>
+                                        <div class="contact__box__form__area__button">
+                                            <button class="contact__box__form__area__submit" @click="enviar">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -293,6 +296,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer></script>
     <script>AOS.init();</script>
 
     <script>

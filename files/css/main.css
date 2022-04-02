@@ -535,6 +535,9 @@ a {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap; } }
+        .contact__box__form__area__foo {
+          display: flex;
+          justify-content: space-around; }
         .contact__box__form__area__input {
           margin: 1rem;
           width: 100%;

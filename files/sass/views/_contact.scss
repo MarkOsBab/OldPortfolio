@@ -102,6 +102,10 @@
                         flex-wrap: wrap;
                     }
                 }
+                &__foo {
+                    display: flex;
+                    justify-content: space-around;
+                }
                 &__input {
                     margin: 1rem;
                     width: 100%;
