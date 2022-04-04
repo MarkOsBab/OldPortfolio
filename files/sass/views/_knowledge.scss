@@ -4,11 +4,11 @@
     align-items: center;
 
     &__box {
-        background-color: $light-white;
+        background-color: var(--box-color);
         padding: 1rem;
         border-radius: 3px;
         box-shadow: 3px 3px 3px $dark-transparent;
-        color: $dark-1;
+        color: var(--font-color);
 
         &__grid {
             display: grid;

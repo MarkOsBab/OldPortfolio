@@ -4,24 +4,8 @@
     align-items: center;
 
     &__title {
-        font-family: 'Raleway', sans-serif;
         font-size: 2.3em;
-        transform: translateX(-0.75em);
-        transition: transform 200ms;
-        &::before {
-            content: '#';
-            display: inline-block;
-            width: 0.75em;
-            color: $primary;
-            opacity: 0;
-            transition: opacity 200ms;
-        }
-        &:hover {
-            transform: none;
-        }
-        &:hover::before {
-            opacity: 1;
-        }
+        @extend .titles;
     }
 
     &__desc {
@@ -31,12 +15,11 @@
     }
 
     &__box {
-        background-color: $light-white;
-        color: $white;
+        background-color: var(--box-color);
         padding: 1rem;
         border-radius: 3px;
         box-shadow: 3px 3px 3px $dark-transparent;
-        color: $dark-1;
+        color: var(--font-color);
         &__grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));

@@ -1,12 +1,12 @@
 .footer {
-    background-color: $light-white;
+    background-color: var(--box-color);
     padding: 30px;
     margin-top: 1rem;
 
     &__title {
         font-family: 'Raleway', sans-serif;
         text-align: center;
-        color: $dark;
+        color: var(--font-color);
         font-size: 20px;
     }
 }
