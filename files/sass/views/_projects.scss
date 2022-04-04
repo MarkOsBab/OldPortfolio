@@ -24,6 +24,12 @@
         }
     }
 
+    &__desc {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.7em;
+        font-weight: bolder;
+    }
+
     &__box {
         background-color: $light-white;
         color: $white;
@@ -43,6 +49,10 @@
             align-self: center;
             padding: 1rem;
             margin: 1rem;
+            &__btn {
+                border: none;
+                cursor: pointer;
+            }
 
             &__picture {
                 min-width: 100%;
@@ -67,26 +77,7 @@
                 font-weight: bold;
                 &__title {
                     font-size: 1.4em;
-                    font-family: 'Raleway', sans-serif;
-                    font-weight: bolder;
-                    transform: translateX(-0.75em);
-                    transition: transform 200ms;
-                    padding: .5rem 0;
-                    text-align: center;
-                    &::before {
-                        content: '#';
-                        display: inline-block;
-                        width: 0.75em;
-                        color: $primary;
-                        opacity: 0;
-                        transition: opacity 200ms;
-                    }
-                    &:hover {
-                        transform: none;
-                    }
-                    &:hover::before {
-                        opacity: 1;
-                    }
+                    @extend .titles;
                 }
             }
         }

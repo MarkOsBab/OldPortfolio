@@ -12,6 +12,10 @@
         padding: 50px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
+        overflow: hidden;
+        animation: display__header__title;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; 
 
         &--color {
             background-color: $dark-transparent;

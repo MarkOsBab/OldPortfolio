@@ -32,3 +32,23 @@
     max-width: 1080px;
     margin: 1rem auto;
 }
+
+.titles {
+    font-family: 'Raleway', sans-serif;
+    transform: translateX(-0.75em);
+    transition: transform 200ms;
+    &::before {
+        content: '#';
+        display: inline-block;
+        width: 0.75em;
+        color: $primary;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+    &:hover {
+        transform: none;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}

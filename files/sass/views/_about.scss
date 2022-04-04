@@ -8,6 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: center;
         padding: 1rem;
         background-color: $light-white;
         border-radius: 5px;
@@ -20,29 +21,13 @@
         .about__image {
             width: 100%;
             max-width: 400px;
-            filter: invert(1);
             border-radius: 5px;
             padding: 1rem;
         }
 
         .about__title {
             text-align: left;
-            transform: translateX(-0.75em);
-            transition: transform 200ms;
-            &::before {
-                content: '#';
-                display: inline-block;
-                width: 0.75em;
-                color: $primary;
-                opacity: 0;
-                transition: opacity 200ms;
-            }
-            &:hover {
-                transform: none;
-            }
-            &:hover::before {
-                opacity: 1;
-            }
+            @extend .titles;
         }
 
         .about__content {

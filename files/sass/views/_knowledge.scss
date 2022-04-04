@@ -5,7 +5,6 @@
 
     &__box {
         background-color: $light-white;
-        color: $white;
         padding: 1rem;
         border-radius: 3px;
         box-shadow: 3px 3px 3px $dark-transparent;
@@ -17,24 +16,8 @@
         }
 
         &__title {
-            font-family: 'Raleway', sans-serif;
+            @extend .titles;
             font-size: 2.3em;
-            transform: translateX(-0.75em);
-            transition: transform 200ms;
-            &::before {
-                content: '#';
-                display: inline-block;
-                width: 0.75em;
-                color: $primary;
-                opacity: 0;
-                transition: opacity 200ms;
-            }
-            &:hover {
-                transform: none;
-            }
-            &:hover::before {
-                opacity: 1;
-            }
         }
 
         &__item {
@@ -59,24 +42,7 @@
                 font-weight: bolder;
                 &__title {
                     font-size: 1.4em;
-                    font-family: 'Raleway', sans-serif;
-                    font-weight: bolder;
-                    transform: translateX(-0.75em);
-                    transition: transform 200ms;
-                    &::before {
-                        content: '#';
-                        display: inline-block;
-                        width: 0.75em;
-                        color: $primary;
-                        opacity: 0;
-                        transition: opacity 200ms;
-                    }
-                    &:hover {
-                        transform: none;
-                    }
-                    &:hover::before {
-                        opacity: 1;
-                    }
+                    @extend .titles;
                 }
             }
         }

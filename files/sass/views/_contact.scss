@@ -8,24 +8,12 @@
         background-color: $light-white;
         border-radius: 5px;
         &__title {
-            font-family: 'Raleway', sans-serif;
             font-size: 2em;
-            transform: translateX(-0.75em);
-            transition: transform 200ms;
-            &::before {
-                content: '#';
-                display: inline-block;
-                width: 0.75em;
-                color: $primary;
-                opacity: 0;
-                transition: opacity 200ms;
-            }
-            &:hover {
-                transform: none;
-            }
-            &:hover::before {
-                opacity: 1;
-            }
+            @extend .titles;
+        }
+        &__desc {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.7em;
         }
         &__flex {
             display: flex;
@@ -90,6 +78,9 @@
         }
         &__form {
             padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             &__box {
                 width: 50vw;
             }
@@ -111,10 +102,6 @@
                     resize: none;
                     &:focus-visible {
                         outline: .1rem solid $link-color;
-                    }
-
-                    &:required {
-                        background-color: $primary;
                     }
                 }
                 &__button {
