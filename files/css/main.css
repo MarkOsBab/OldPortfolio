@@ -221,8 +221,51 @@ a {
       .navbar__item__link--active:hover {
         background-color: #2B2B2B;
         color: #fff; }
-  .navbar #myLinks {
-    display: none; }
+    .navbar__item__switch {
+      display: flex;
+      align-items: center; }
+      .navbar__item__switch__label {
+        display: inline-block;
+        position: relative;
+        width: 3rem;
+        height: 1.7rem; }
+      .navbar__item__switch__input {
+        display: none; }
+        .navbar__item__switch__input:checked + .navbar__item__switch--slider {
+          background-color: #2B2B2B; }
+        .navbar__item__switch__input:checked + .navbar__item__switch--slider:before {
+          transform: translateX(8px); }
+      .navbar__item__switch--slider {
+        background-color: #7CCBBA;
+        width: 4rem;
+        height: 2rem;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: .5s; }
+        .navbar__item__switch--slider:before {
+          background-color: #f2f2f2;
+          bottom: .5rem;
+          content: '';
+          left: .4rem;
+          position: absolute;
+          transition: .5s;
+          width: 1rem;
+          height: 1rem; }
+      .navbar__item__switch--round {
+        border-radius: 1.3rem; }
+        .navbar__item__switch--round::before {
+          border-radius: 1.3rem; }
+      .navbar__item__switch--icon {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+        font-size: 1.3rem;
+        padding-right: .3rem; }
 
 .footer {
   background-color: var(--box-color);
