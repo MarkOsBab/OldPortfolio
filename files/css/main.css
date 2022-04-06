@@ -545,7 +545,8 @@ a {
           padding: 1rem;
           border: 0.2rem solid #7CCBBA;
           border-radius: .2rem;
-          resize: none; }
+          resize: none;
+          background-color: var(--box-color); }
           .contact__box__form__area__input:focus-visible {
             outline: 0.1rem solid #60BBA2; }
         .contact__box__form__area__button {

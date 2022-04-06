@@ -100,6 +100,7 @@
                     border: .2rem solid $primary;
                     border-radius: .2rem;
                     resize: none;
+                    background-color: var(--box-color);
                     &:focus-visible {
                         outline: .1rem solid $link-color;
                     }
